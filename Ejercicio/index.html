@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Sasha Amarfil</title>
+</head>
+
+<body>
+
+    <h1>
+        Formulario
+    </h1>
+
+    <form action="envio.php" method="post" target="_blank">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="identificador" size="tamaño"
+        name="nombre" placeholder="Indique su nombre" required>
+        <br>
+        <br>
+        <label for="user">Usuario:</label>
+        <input type="text" name="user" id="user" placeholder="Indique su usuario" required>
+        <small>
+            *Este campo es obligatorio
+        </small>
+        <br>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" size="tamaño"
+        name="contraseña" placeholder="Indique su contraseña" required>
+        <br>
+        <br>
+        <label for="lenguajes">Seleccione que lenguaje sabe:</label>
+        <input type="radio" name="javascript" id="javascript">JavaScript
+        <input type="radio" name="python" id="python">Python
+        <input type="radio" name="java" id="java">Java
+        <br>
+        <br>
+        <label for="años">Indique la cantidad de años que lleva:</label>
+        <input type="number" name="numero" id="numero" placeholder="Años programando">
+        <br>
+        <br>
+        <input type="checkbox" name="condiciones" 
+        id="condiciones">¿Desea recibir correos de promociones y/o anuncios?
+        <br>
+        <br>
+        <label for="archivo">Carga tu archivo:</label>
+        <input type="file" name="archivo" id="archivo">
+        <br>
+        <br>
+        <label for="opinion">Escribí tu opinion</label>
+        <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="(Opcional)">
+        </textarea>
+        <br>
+        <br>
+        <label for="pais">Selecciona tu país de origen:</label>
+        <select name="pais" id="pais">
+            <optgroup label="América">
+                <option value="Argentina">Argentina</option>
+                <option value="Mexico">México</option>
+            </optgroup>
+
+            <optgroup label="Europa">
+                <option value="Francia">Francia</option>
+                <option value="Croacia">Croacia</option>
+                <option value="Marruecos">Marruecos</option>
+            </optgroup>
+
+            <option value="Otro">Otro</option>
+        </select>
+        <br>
+        <br>
+        <label for="otro">Escribre que otro:</label>
+        <textarea name="otro" id="otro" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Enviar tus datos">
+        <br>
+        <input type="reset" value="Resetea tus datos">
+        <br>
+      <!---  <input type="button" onclick="alert(Suscribite para mas contenido)" value="saludo"> 
+        (hay que arreglar ese alert)
+        --->
+        <br>
+        <br>
+        <label for="fecha">Fecha de ingreso laboral:</label>
+        <input type="date" name="fecha" id="fecha" max="2023-04-13">
+
+    </form>
+
+<h4>Alumna: Sasha Amarfil</h4>
+
+</body>
+
+</html>
